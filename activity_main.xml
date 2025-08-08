@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#EF8EAE">
+
+    <!-- Names in a horizontal row with space -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LOVE CALCULATOR"
+        android:paddingBottom="100dp"
+        android:textSize="50sp"
+        android:textColor="#E91E36"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+
+        <EditText
+            android:id="@+id/editName1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:hint="Enter your name"
+            android:textSize="12dp"
+            android:inputType="textPersonName"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/editName2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:layout_marginStart="8dp"
+            android:hint="Enter your friend's name"
+            android:inputType="textPersonName"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <!-- Circular Button with Heart -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circular_button"
+        android:drawableTop="@drawable/heart_icon"
+        android:text="Calculate"
+        android:textSize="13dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:visibility="gone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circular_button"
+        android:drawableTop="@drawable/refresh_icon"
+        android:text="Calculate"
+        android:textSize="13dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="12dp" />
+    <!-- Result -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
